@@ -1,0 +1,248 @@
+/** VARIABLES **/
+:root{
+    --black: #001514;
+    --white: #ffffff;
+    --blue: #0090C4;
+    --gray: #E0E0E0;
+    --green: #197F4B;
+    --red: #FF002B;
+    --esmerald: #DB324D;
+}
+
+/** GENERAL STYLES **/
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: var(--blue);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+h1, h2, h3{
+    font-size: 2.5rem;
+}
+.background-gray{
+    background-color: var(--gray);
+}
+/** HEADER STYLES **/
+.header{
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.logo-header{
+    width: 100px;
+}
+.header-nav{
+    font-size: 1rem;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+.header-nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+li a{
+    color: var(--white);
+}
+
+/*************** INDEX ************/
+/** BILLBOARD CONTAINER - INDEX **/
+.billboard-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+}
+.billboard-container h1{
+    font-size: 4rem;
+}
+.billboard-container h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.billboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5.5%;
+}
+.billboard-img{
+    height: 650px;
+}
+
+/** SECTION ABOUT **/
+.container-about, .container-plans{
+    padding: 4% 0;
+}
+.container-about, .container-services article{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.content-about{
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    width: 70%;
+}
+
+/** SECTION SERVICES **/
+.container-services, .container-contact{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5% 0;
+}
+.content-services{
+    align-content: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 5%;
+}
+.services-img{
+    width: 100%;
+}
+.container-services article{
+    margin: 0 5%;
+}
+
+/** SECTION PLANS **/
+.container-plans{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.content-plans{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+.article-plans{
+    align-items: center;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    margin: 4% auto;
+    padding: 2.5% 0;
+}
+.price-text{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.article-plans img{
+    width: 80%;
+}
+.article-plans ul li{
+    margin: 25% 0;
+}
+.article-plans ul li span{
+    text-decoration: line-through;
+}
+
+/** SECTION CONTACT **/
+.content-contact{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 3% 0;
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.form-contact button{
+    width: 20%;
+    align-self: center;
+}
+textarea{
+    max-width: 100%;
+}
+.form-contact span{
+    color: var(--red);
+}
+
+/** FOOTER **/
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0;
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+    width: 10%;
+}
+.footer-social img, .footer-contacto ul{
+    width: 100%;
+}
+.footer-social, .footer-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 15%;
+}
+.footer-social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.footer-social ul li{
+    width: 15%;
+    margin: 0 5%;
+}
+.footer-contacto ul li a{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.footer-contacto .footer-img{
+    width: 10%;
+}
+/************ NOSOTROS *********/
+.ceo-order{
+    order: 2;
+}
+.dev-order{
+    order: 1;
+}
+.design-order{
+    order: 3;
+}
+.article-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+}
+.article-about h3{
+    font-size: 1.5rem;
+}
