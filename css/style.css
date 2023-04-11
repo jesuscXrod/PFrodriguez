@@ -8,7 +8,6 @@
     --red: #FF002B;
     --esmerald: #DB324D;
 }
-
 /** GENERAL STYLES **/
 *{
     font-family: 'Open Sans', sans-serif;
@@ -54,11 +53,10 @@ h1, h2, h3{
 li a{
     color: var(--white);
 }
-
 /*************** INDEX ************/
 /** BILLBOARD CONTAINER - INDEX **/
-.billboard-container{
-
+.billboard-container, .container-about, .container-services{
+    margin: 5% auto;
 }
 .billboard-container h1{
     font-size: 4rem;
@@ -67,41 +65,39 @@ li a{
     font-size: 2.5rem;
     font-weight: 300;
 }
-.billboard-content {
-
+.billboard-content > *{
+    margin: 5% 0;
 }
 .billboard-img{
     height: 650px;
+    width: 100%;
 }
-
 /** SECTION ABOUT **/
 .container-about, .container-plans{
-
+    padding: 2% 0;
 }
-.container-about, .container-services article{
-
+.container-about div a{
+    padding: 0;
 }
-.content-about{
-
-    width: 70%;
+.container-about > *{
+    margin: 2.5% 0;
 }
-
+.btn-about{
+    width: 100%;
+}
 /** SECTION SERVICES **/
-.container-services, .container-contact{
-
-
+.container-services-mobile{
+    display: none;
 }
-.content-services{
-
-
+.container-services article > *{
+    margin: 5% 0;
 }
 .services-img{
     width: 100%;
 }
-.container-services article{
-
+.content-services{
+    max-width: 100%;
 }
-
 /** SECTION PLANS **/
 .container-plans{
 
@@ -211,6 +207,10 @@ footer{
 }
 
 /** BOOTSTRAP EDITS **/
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
 
 /** MOBILE - BOOTSTRAP EDIT **/
 .navbar-toggler{
@@ -221,8 +221,33 @@ footer{
 }
 
 /** Media Query **/
+@media (max-width: 992px){
+    .content-services{
+        display: none;
+    }
+    .container-services-mobile{
+        display: inline-block;
+    }
+    .container-services article > *{
+        margin: 2.5% 0;
+    }
+}
 @media (max-width: 768px){
     .header-nav ul li{
+        margin: 5% 0;
+    }
+    .billboard-img{
+        height: 500px;
+    }
+    .container-about article > *{
+        margin: 2.5% 0;
+    }
+}
+@media (max-width: 576px){
+    .billboard-img{
+        height: 300px;
+    }
+    .container-services article > *{
         margin: 5% 0;
     }
 }
