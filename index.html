@@ -17,21 +17,26 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-container">
+    <header class="nav navbar navbar-expand-md header row justify-content-between">
+        <div class="logo-container col-2">
             <img class="logo-header" src="./img/logo.png" alt="Logo de la pagina en FPO">
         </div>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/planes.html">Planes</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-2" id="navbarSupportedContent">
+            <nav class="header-nav offset-xl-5 col-xl-7 col-md-10 align-items-center ">
+                <ul class="row justify-content-center">
+                    <li class="col-12 col-md-2"><a href="#">Inicio</a></li>
+                    <li class="col-12 col-md-2"><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="col-12 col-md-2"><a href="./pages/servicios.html">Servicios</a></li>
+                    <li class="col-12 col-md-2"><a href="./pages/planes.html">Planes</a></li>
+                    <li class="col-12 col-md-2"><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main class="container-fluid">
         <section class="billboard-main">
             <article class="billboard-container">
                 <div class="billboard-content">
