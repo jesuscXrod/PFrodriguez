@@ -93,7 +93,7 @@
                     <a href="#"><button>Mas info</button></a>
                 </article>
             </section>
-            <section id="carousel-mobile" class="carousel slide pointer-event container-services-mobile">
+            <section id="carousel-mobile-services" class="carousel container slide pointer-event container-services-mobile">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <article class="col-12 text-center">
@@ -129,11 +129,11 @@
                             </article>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile-services" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-mobile" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-mobile-services" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -141,9 +141,9 @@
         </section>
         <section class="container-plans background-gray">
             <h2 class="text-center">Conoce nuestros planes para tu MenuQR</h2>
-            <section class="content-plans">
-                <article class="article-plans">
-                    <h3>Estándar</h3>
+            <section class="content-plans row justify-content-around">
+                <article class="article-plans col-4 text-center">
+                    <h3 class="text-center">Estándar</h3>
                     <img class="img-fluid" src="./img/fpo.png" alt="">
                     <ul>
                         <li>Opcion 01</li>
@@ -154,7 +154,7 @@
                     <span class="price-text">10000$</span>
                     <a href="#"><button>Contratar</button></a>
                 </article>
-                <article class="article-plans">
+                <article class="article-plans col-4 text-center">
                     <h3>Premium</h3>
                     <img class="img-fluid" src="./img/fpo.png" alt="">
                     <ul>
@@ -167,50 +167,104 @@
                     <a href="#"><button>Contratar</button></a>
                 </article>
             </section>
+            <section id="carousel-mobile-plans" class="carousel container slide pointer-event container-plans-mobile">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="article-plans col-12 text-center">
+                            <h3 class="text-center">Estándar</h3>
+                            <img class="img-fluid" src="./img/fpo.png" alt="">
+                            <ul>
+                                <li>Opcion 01</li>
+                                <li>Opcion 02</li>
+                                <li><span>Opcion 03</span></li>
+                                <li><span>Opcion 04</span></li>
+                            </ul>
+                            <span class="price-text">10000$</span>
+                            <a href="#"><button>Contratar</button></a>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="article-plans col-12 text-center">
+                            <h3>Premium</h3>
+                            <img class="img-fluid" src="./img/fpo.png" alt="">
+                            <ul>
+                                <li>Opcion 01</li>
+                                <li>Opcion 02</li>
+                                <li>Opcion 03</li>
+                                <li>Opcion 04</li>
+                            </ul>
+                            <span class="price-text">20000$</span>
+                            <a href="#"><button>Contratar</button></a>
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile-plans" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-mobile-plans" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
         </section>
         <section class="container-contact">
-            <h2>Contactanos</h2>
-            <section class="content-contact">
-                <form class="form-contact" action="">
-                    <label for="form-name">Nombre y Apellido<span>*</span></label>
-                    <input type="text" name="form-nombre" id="form-nombre">
-                    <label for="form-email">Correo Electronico<span>*</span></label>
-                    <input type="email" name="form-email" id="form-email">
-                    <label for="form-phone">Numero Telefonico<span>*</span></label>
-                    <input type="text" name="form-phone" id="form-phone">
-                    <label for="form-message">Mensaje</label>
-                    <textarea name="form-message" id="form-message" cols="30" rows="10"></textarea>
-                    <span>*Estos campos son obligatorios</span>
-                    <button class="form-button" id="form-button" type="submit">Enviar</button>
+            <h2 class="text-center">Contactanos</h2>
+            <section class="content-contact row align-items-center justify-content-around">
+                <form class="form-contact col-lg-4 offset-lg-1">
+                    <div class="mb-3">
+                        <label for="nombreApellido" class="form-label">Nombre y Apellido*</label>
+                        <input type="name" class="form-control" id="nombreApellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Numero Telefonico*</label>
+                        <input type="phone" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Mensaje</label>
+                    </div>
+                    <span class="mb-3">*Estos campos son obligatorios para poder enviar el formulario</span>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary button-form col-6">Enviar</button>
+                    </div>
                 </form>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.7415032593553!2d-58.45189710368123!3d-34.56664312094161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d02406e57d%3A0xe38e73bb8ef1080a!2sJose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1679026067699!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="col-lg-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.7415032593553!2d-58.45189710368123!3d-34.56664312094161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d02406e57d%3A0xe38e73bb8ef1080a!2sJose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1679026067699!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </section>
     </main>
-    <footer class="footer">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/planes.html">Planes</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-        <div class="footer-social">
-            <p>Redes Sociales</p>
+    <footer class="footer text-center justify-content-around row">
+        <div class="col-lg-3">
             <ul>
-                <li><a href="#"><img class="footer-img" src="./img/facebook.png" alt="Facebook Logo"></a></li>
-                <li><a href="#"><img class="footer-img" src="./img/instagram.png" alt="Instagram Logo"></a></li>
-                <li><a href="#"><img class="footer-img" src="./img/linkedin.png" alt="Linkedin Logo"></a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/planes.html">Planes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
-        <div class="footer-contacto">
+        <div class="footer-social col-lg-3">
+            <p>Redes Sociales</p>
+                <ul class="row justify-content-center">
+                    <li class="col-2 col-md-1 col-lg-2"><a href="#"><img class="footer-img" src="./img/facebook.png" alt="Facebook Logo"></a></li>
+                    <li class="col-2 col-md-1 col-lg-2"><a href="#"><img class="footer-img" src="./img/instagram.png" alt="Instagram Logo"></a></li>
+                    <li class="col-2 col-md-1 col-lg-2"><a href="#"><img class="footer-img" src="./img/linkedin.png" alt="Linkedin Logo"></a></li>
+                </ul>
+        </div>
+        <div class="footer-contacto col-lg-3">
             <p>Contacto:</p>
-            <ul>
-                <li><a href="tel:+54 9 11 1234 5678"><img class="footer-img" src="./img/whatsapp.png" alt="whatsapp logo">+54 9 11 1234 5678</a></li>
-            </ul>                
-            <ul>
-                <li><a href="mailto:emailcorp@domain.com"><img class="footer-img" src="./img/correo.png" alt="correo electronico logo">emailcorp@domain.com</a></li>
-            </ul>
+            <div class="row">
+                <ul class="col-12">
+                    <li><a href="tel:+54 9 11 1234 5678"><img class="footer-img" src="./img/whatsapp.png" alt="whatsapp logo">+54 9 11 1234 5678</a></li>
+                </ul>                
+                <ul class="col-12">
+                    <li><a href="mailto:emailcorp@domain.com"><img class="footer-img" src="./img/correo.png" alt="correo electronico logo">emailcorp@domain.com</a></li>
+                </ul>   
+            </div>
         </div>
     </footer>
     <!-- Bootstrap JS-->
