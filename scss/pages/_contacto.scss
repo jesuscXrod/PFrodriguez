@@ -1,0 +1,28 @@
+/** SECTION ABOUT **/
+.container-contact{
+    padding: 2% 0;
+    margin: auto;
+}
+/** SECTION CONTACT **/
+textarea{
+    max-width: 100%;
+    min-height: 250px !important;
+}
+.content-contact{
+    margin: 3% 0;
+}
+.form-contact{
+    span{
+        color: $red;
+        display: block;
+    }
+
+    & > button{
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 992px){
+    .form-contact{
+        margin: 2.5% 0;}
+}

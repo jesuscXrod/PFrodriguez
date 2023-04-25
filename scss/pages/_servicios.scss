@@ -1,0 +1,41 @@
+.container-services{
+    margin: 5% auto;
+
+    article > *{
+        margin: 5% 0;  
+    }
+
+    &-mobile{
+        display: none;
+    }
+}
+.services-img{
+    width: 90%;
+    height: 420px;
+}
+.content-services{
+    max-width: 100%;
+}
+
+@media (max-width: 992px){
+    .container-services-mobile{
+        display: inline-block;
+    }
+    .content-services{
+        display: none;
+
+        &-mobile{
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        article > *{
+            margin: 2.5% 0;
+        }
+    }
+}
+@media (max-width: 576px){
+    .container-services article > *{
+        margin: 5% 0;
+    }
+}

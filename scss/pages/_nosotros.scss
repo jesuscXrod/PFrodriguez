@@ -1,0 +1,30 @@
+.container-about{
+    margin: 5% auto;
+    padding: 2% 0;
+
+    & > *{
+        margin: 2.5% 0;
+    }
+
+}
+.btn-about{
+    width: 100%;
+}
+.carousel-control{
+    &-next, &-prev{
+        opacity: 1;
+        
+        &-icon{
+            background-image: url(../../img/flecha.png);
+        }
+    }
+    
+    &-next{
+        rotate: 180deg;
+    }
+}
+@media (max-width: 768px){
+    .container-about article > *{
+        margin: 2.5% 0;
+    }
+}

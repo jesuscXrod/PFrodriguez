@@ -1,0 +1,42 @@
+footer{
+    background-color: $black;
+    color: $white;
+    padding: 3%;
+    margin: 0 !important;
+}
+.footer{
+    li{
+        margin: 7% 0;
+    }
+
+    &-social{
+        img{
+            width: 100%;
+        }
+        div{
+            flex-direction: row;
+        }
+    }
+
+    &-contacto{
+        ul{
+            width: 100%;
+    
+            li{
+                margin: 2% 0;
+            }
+        }
+    }
+
+    &-img{
+        margin: 0 5%;
+        width: 10%;
+    }
+}
+
+@media (max-width: 992px){
+    .footer-contacto .footer-img {
+        margin: 0 3%;
+        width: 6%;
+    }
+}

@@ -1,0 +1,50 @@
+.container-plans{
+    padding: 2% 0;
+    margin: auto;
+
+    &-mobile{
+        display: none;
+    }
+}
+.article-plans{
+    border: 1px solid $black;
+    border-radius: 20px;
+    padding: 2.5% 0;
+
+    & > *{
+        margin: 5% 0;
+    }
+
+    img{
+        width: 80%;
+        height: 420px;
+    }
+    ul{
+        span{
+            text-decoration: line-through;
+        }
+    }
+}
+.content-plans{
+    padding: 2% 0;
+    margin: auto;
+}
+.price-text{
+    color: $green;
+    font-weight: 600;
+    font-size: 2rem;
+    display: block;
+}
+@media (max-width: 992px){
+    .article-plans{
+        margin: 2.5% 0;
+    }
+    .content-plans{
+        display: none;
+    }
+    .container-plans-mobile{
+        display: inline-block;
+        margin: 5% 0;
+        max-width: 100%;
+    }
+}
